@@ -1,0 +1,77 @@
+ext {
+
+    android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.2",
+            minSdkVersion    : 16,
+            targetSdkVersion : 29,
+            versionCode      : 1,
+            versionName      : "1.0.1"
+    ]
+
+    version = [
+            androidSupportSdkVersion: "28.0.0",
+            retrofitSdkVersion      : "2.6.0",
+            glideSdkVersion         : "4.10.0",
+            rxlifecycleSdkVersion   : "3.1.0",
+            butterknifeSdkVersion   : "10.0.0",//再10.0之前使用androidX有会报错
+    ]
+
+    dependencies = [
+
+            //单元测试
+            "junit"                   : "junit:junit:4.12",
+            "androidJunit"            : 'androidx.test.ext:junit:1.1.1',
+            "espresso"                : 'androidx.test.espresso:espresso-core:3.2.0',
+            "androidJUnitRunner"      : "android.support.test.runner.AndroidJUnitRunner",
+
+            //Android support 基础库
+            "appcompat"               : "androidx.appcompat:appcompat:1.1.0",
+            "appcompat-v7"            : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
+            "design"                  : "com.android.support:design:${version["androidSupportSdkVersion"]}",
+            "support-v4"              : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
+            "cardview-v7"             : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
+            "annotations"             : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
+            "recyclerview-v7"         : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+
+            //网络请求框架
+            "retrofit"                : "com.squareup.retrofit2:retrofit:${version["retrofitSdkVersion"]}",
+            "retrofit-converter-gson" : "com.squareup.retrofit2:converter-gson:${version["retrofitSdkVersion"]}",
+            "retrofit-adapter-rxjava2": "com.squareup.retrofit2:adapter-rxjava2:${version["retrofitSdkVersion"]}",
+            "loggingInterceptor"      : "com.squareup.okhttp3:logging-interceptor:3.14.2",
+            "okhttp3"                 : "com.squareup.okhttp3:okhttp:3.14.2",
+
+            //RxJava&RxAndroid
+            "rxandroid2"              : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            "rxjava2"                 : "io.reactivex.rxjava2:rxjava:2.2.10",
+
+            //RxLifecycle基础库
+            "rxlifecycle"             : 'com.trello.rxlifecycle3:rxlifecycle',
+            "rxlifecycleAndroid"      : "com.trello.rxlifecycle3:rxlifecycle-android:${version["rxlifecycleSdkVersion"]}",
+            "rxlifecycle-components"  : "com.trello.rxlifecycle3:rxlifecycle-components:${version["rxlifecycleSdkVersion"]}",
+
+
+            //图片加载框架
+            "glide"                   : "com.github.bumptech.glide:glide:${version["glideSdkVersion"]}",
+            "glide-compiler"          : "com.github.bumptech.glide:compiler:${version["glideSdkVersion"]}",
+            "glide-loader-okhttp3"    : "com.github.bumptech.glide:okhttp3-integration:${version["glideSdkVersion"]}",
+
+
+            //view
+            "butterknife"             : "com.jakewharton:butterknife:${version["butterknifeSdkVersion"]}",
+            "butterknife-compiler"    : "com.jakewharton:butterknife-compiler:${version["butterknifeSdkVersion"]}",
+            "pickerview"              : "com.contrarywind:Android-PickerView:3.2.5",
+            "photoview"               : "com.github.chrisbanes.photoview:library:1.2.3",
+
+
+            //tools
+            "androideventbus"         : "org.simple:androideventbus:1.0.5.1",
+            "eventbus"                : "org.greenrobot:eventbus:3.1.1",
+            "gson"                    : "com.google.code.gson:gson:2.8.6",
+            "multidex"                : "com.android.support:multidex:1.0.3",
+            "statusbarutil"           : 'com.jaeger.statusbarutil:library:1.5.1'
+
+
+    ]
+}
+

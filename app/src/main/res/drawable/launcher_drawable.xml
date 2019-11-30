@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@mipmap/launcher_backgroud"
+    android:gravity="fill_vertical|center"
+    android:antialias="true"
+    android:dither="true"
+    android:filter="true"/>
+<!--
+gravity="fill_vertical":水平铺满
+android:antialias="true" 抗锯齿
+ android:dither="true" 图像抖动 当使用图片的dpi和屏幕不匹配时，开启图像抖动可以获得更好的显示效果
+ android:filter="true" 滤镜 开启后拉伸图片时会更加平滑
+-->

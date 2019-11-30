@@ -1,0 +1,13 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/windowBackground</item>
+    </style>
+    <!--启动页-->
+    <style name="AppTheme.Launcher" parent="AppTheme">
+        <!--防止开屏页闪白屏 这里图片为水品等比拉伸  所以图片尽量高度能尽量高一点防止部分机型不能铺满全屏-->
+        <item name="android:windowBackground">@drawable/launcher_drawable</item>
+<!--        <item name="android:windowBackground">@drawable/launcher_drawable</item>-->
+    </style>
+</resources>
